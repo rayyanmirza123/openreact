@@ -21,7 +21,7 @@ class Action {
                 
 		// Break apart the route
 		while ($parts) {
-			$file = APP.DIR_ADMIN . 'controller/' . implode('/', $parts) . '.php';
+			$file =  '/app/Admin/controller/' . implode('/', $parts) . '.php';
                        
 			if (is_file($file)) {
 				$this->route = implode('/', $parts);
