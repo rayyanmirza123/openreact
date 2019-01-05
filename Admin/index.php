@@ -15,7 +15,7 @@ if(is_file('config.php'))
     require_once('config.php');
 }
 
-if(is_file(DIR_ENGINE.'Startup.php'))
+if(is_file('/app/Engine/Startup.php'))
 {
     echo DIR_ENGINE.'Startup.php';
     require DIR_ENGINE.'Startup.php';
