@@ -5,7 +5,7 @@
  */
 
 define('APP',"/");
-define('DIR_ENGINE',"/app/Engine/");
-define('DIR_ADMIN',"/app/Admin/");
-define('DIR_CONFIG',"/app/Engine/Config/");
+define('DIR_ENGINE',"/Engine/");
+define('DIR_ADMIN',"/Admin/");
+define('DIR_CONFIG',"/Engine/Config/");
 
