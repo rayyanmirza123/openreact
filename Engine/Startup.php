@@ -13,7 +13,6 @@ require 'Main/Action.php';
 function Library($class) {
 	$file = '/app/Engine/Library/' . str_replace('\\', '/', $class) . '.php';
 	if (is_file($file)) {
-              echo $file;
 		include_once($file);
 		return true;
 	} else {
