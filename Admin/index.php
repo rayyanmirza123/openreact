@@ -18,7 +18,5 @@ if(is_file(DIR_ENGINE.'/Startup.php'))
 {
     require DIR_ENGINE.'/Startup.php';
 }
-$request = $_SERVER['REQUEST_URI'];
 
-echo $request;
 start('admin');
