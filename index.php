@@ -1,4 +1,4 @@
 <?php
 
-header('Location: /app/zapp/Admin/');
+header('Location: /Admin/');
 
