@@ -4,7 +4,7 @@
  *  Damn Straight now copying only buying.
  */
 
-$main = (isset($_SERVER['HTTPS'])?$_SERVER['HTTPS']:$_SERVER['HTTP']).$_SERVER['SERVER_NAME'];
+$main = (isset($_SERVER['HTTPS'])?"https://":"http://").$_SERVER['SERVER_NAME'];
 
 define('DIR_MAIN',$main);
 define('DIR_ENGINE',DIR_MAIN."/Engine/");
