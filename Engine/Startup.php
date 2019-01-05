@@ -11,7 +11,7 @@ require 'Main/Loader.php';
 require 'Main/Action.php';
 
 function Library($class) {
-	$file = DIR_ENGINE.'Library/' . str_replace('\\', '/', strtolower($class)) . '.php';
+	$file = '/app/Engine/Library/' . str_replace('\\', '/', $class) . '.php';
 	if (is_file($file)) {
               echo $file;
 		include_once($file);
