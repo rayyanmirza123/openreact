@@ -11,13 +11,13 @@ require 'Main/Loader.php';
 require 'Main/Action.php';
 
 function Library($class) {
-	$file = '/app/Engine/Library/' . str_replace('\\', '/', strtolower($class)) . '.php';
+	$file = DIR_ENGINE.'Library/' . str_replace('\\', '/', strtolower($class)) . '.php';
 	if (is_file($file)) {
               echo $file;
 		include_once($file);
 		return true;
 	} else {
-		echo $file;
+		//echo $file;
 		return false;
 	}
 }
