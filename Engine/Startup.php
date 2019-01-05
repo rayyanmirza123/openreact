@@ -16,7 +16,6 @@ function Library($class) {
 		include_once($file);
 		return true;
 	} else {
-		echo $file;  //check if we are wrong
 		return false;
 	}
 }
