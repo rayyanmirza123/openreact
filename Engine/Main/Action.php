@@ -40,7 +40,7 @@ class Action {
 			return new Exception('Error: Calls to magic methods are not allowed!');
 		}
                 
-                $file = APP.DIR_ADMIN.'controller/'.$this->route.'.php';
+                $file = '/app/Admin/controller/'.$this->route.'.php';
                 $path = explode('/',$this->route);
                 $class = array_pop($path);
                
