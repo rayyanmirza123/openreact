@@ -14,6 +14,7 @@ function Library($class) {
 	$file = DIR_ENGINE . 'Library/' . str_replace('\\', '/', strtolower($class)) . '.php';
 	if (is_file($file)) {
 		include_once($file);
+		echo $file;
 		return true;
 	} else {
 		return false;
