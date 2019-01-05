@@ -12,8 +12,8 @@ require 'Main/Action.php';
 
 function Library($class) {
 	$file = '/Engine/Library/' . str_replace('\\', '/', strtolower($class)) . '.php';
-	echo $file;
 	if (is_file($file)) {
+              echo $file;
 		include_once($file);
 		return true;
 	} else {
