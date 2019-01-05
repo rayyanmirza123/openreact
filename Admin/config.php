@@ -4,10 +4,10 @@
  *  Damn Straight now copying only buying.
  */
 
-$main = $_SERVER['DOCUMENT_ROOT'].$_SERVER['SERVER_NAME'];
+$main = (isset($_SERVER['HTTPS'])?$_SERVER['HTTPS']:$_SERVER['HTTP']).$_SERVER['SERVER_NAME'];
 
 define('DIR_MAIN',$main);
-define('DIR_ENGINE',DIR_MAIN."Engine/");
+define('DIR_ENGINE',DIR_MAIN."/Engine/");
 define('DIR_ADMIN',"/Admin/");
 define('DIR_CONFIG',"/Engine/Config/");
 
