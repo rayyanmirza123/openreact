@@ -14,9 +14,10 @@ if(is_file('config.php'))
 {
     require_once('config.php');
 }
-if(is_file(DIR_ENGINE.'/Startup.php'))
+
+if(is_file('/app/Engine/Startup.php'))
 {
-    require DIR_ENGINE.'/Startup.php';
+    require '/app/Engine/Startup.php';
 }
 
 start('admin');

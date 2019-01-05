@@ -21,7 +21,7 @@ class Action {
                 
 		// Break apart the route
 		while ($parts) {
-			$file = APP.DIR_ADMIN . 'controller/' . implode('/', $parts) . '.php';
+			$file =  '/app/Admin/controller/' . implode('/', $parts) . '.php';
                        
 			if (is_file($file)) {
 				$this->route = implode('/', $parts);
@@ -40,7 +40,7 @@ class Action {
 			return new Exception('Error: Calls to magic methods are not allowed!');
 		}
                 
-                $file = APP.DIR_ADMIN.'controller/'.$this->route.'.php';
+                $file = '/app/Admin/controller/'.$this->route.'.php';
                 $path = explode('/',$this->route);
                 $class = array_pop($path);
                

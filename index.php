@@ -1,4 +1,4 @@
 <?php
 
-header('Location: /app/Admin/');
+header('Location: /Admin/');
 
