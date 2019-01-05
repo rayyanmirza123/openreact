@@ -17,8 +17,7 @@ if(is_file('config.php'))
 
 if(is_file('/app/Engine/Startup.php'))
 {
-    echo DIR_ENGINE.'Startup.php';
-    require DIR_ENGINE.'Startup.php';
+    require '/app/Engine/Startup.php';
 }
 
 start('admin');
