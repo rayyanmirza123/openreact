@@ -4,7 +4,7 @@
  *  Damn Straight now copying only buying.
  */
 
-$main = $_SERVER['SERVER_NAME'];
+$main = $_SERVER['SERVER_PROTOCOL'].$_SERVER['SERVER_NAME'];
 
 define('DIR_MAIN',$main);
 define('DIR_ENGINE',DIR_MAIN."Engine/");
