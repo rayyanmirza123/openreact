@@ -12,8 +12,6 @@
 class dashboard extends Controller {
     
     private $error = array();
-    private $v8;
-    private $react; 
     public function index()
     {
         echo "<html>"
@@ -27,9 +25,6 @@ class dashboard extends Controller {
                 ."</html>";
         
         $this->load->controller('common/footer');
-        $this->v8 = new V8Js();
-        $this->react = new ReactJS('', '');
-        $this->v8->executeString('alert("hello world");');
         
     }
     
