@@ -28,7 +28,7 @@ class dashboard extends Controller {
         
         $this->load->controller('common/footer');
         $this->v8 = new V8Js();
-        $this->v8->executeString("alert('hello world');");
+        $this->v8->executeString('alert("hello world");');
         
     }
     
