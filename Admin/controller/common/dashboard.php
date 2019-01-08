@@ -12,6 +12,7 @@
 class dashboard extends Controller {
     
     private $error = array();
+    private $v8;
      
     public function index()
     {
@@ -26,6 +27,7 @@ class dashboard extends Controller {
                 ."</html>";
         
         $this->load->controller('common/footer');
+        $this->v8 = V8Js();
     }
     
     public function helloWorld()
