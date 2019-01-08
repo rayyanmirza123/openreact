@@ -50,23 +50,24 @@ class ReactJS {
    */
   
   private $lib,$app;
+  private $instance;
   
-  function __construct($libsrc, $appsrc) {
+  public function __construct() {
     $react = array();
     // stubs, react
     $react[] = "var console = {warn: function(){}, error: print};";
     $react[] = "var global = global || this, self = self || this, window = window || this;";
-    $react[] = $libsrc;
+    $react[] = $this->lib;
     $react[] = "var React = global.React, ReactDOM = global.ReactDOM, ReactDOMServer = global.ReactDOMServer;";
     // app's components
-    $react[] = $appsrc;
+    $react[] = $thi->app;
     $react[] = ';';
 
     $concatenated = implode(";\n", $react);
 
     $this->v8 = new V8Js();
     $this->executeJS($concatenated);
-  }
+  }  
 
   /**
    * Which components is to be rendered along with it's data
