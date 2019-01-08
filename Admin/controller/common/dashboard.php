@@ -28,6 +28,7 @@ class dashboard extends Controller {
         
         $this->load->controller('common/footer');
         $this->v8 = V8Js();
+        
     }
     
     public function helloWorld()
