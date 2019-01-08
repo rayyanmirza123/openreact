@@ -27,7 +27,7 @@ class dashboard extends Controller {
                 ."</html>";
         
         $this->load->controller('common/footer');
-        $this->v8 = V8Js();
+        $this->v8 = new V8Js();
         
     }
     
