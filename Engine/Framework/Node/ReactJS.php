@@ -48,6 +48,9 @@ class ReactJS {
    * @param string $libsrc React's source code
    * @param string $appsrc Application source code
    */
+  
+  private $lib,$app;
+  
   function __construct($libsrc, $appsrc) {
     $react = array();
     // stubs, react
@@ -166,6 +169,16 @@ class ReactJS {
         die();
       }
     }
+  }
+  
+  public function setLibrary($lib)
+  {
+  $this->lib = $lib;
+  }
+  
+  public function setApp($app)
+  {
+  $this->app = $app;
   }
 
 }
