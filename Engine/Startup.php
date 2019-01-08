@@ -21,7 +21,21 @@ function Library($class) {
 	}
 }
 
+function Framework($class)
+{
+$file = '/app/Engine/Framework/' . str_replace('\\', '/', $class) . '.php';
+	if (is_file($file)) {
+		include_once($file);
+		return true;
+	} else {
+		//echo $file;
+		return false;
+	}	
+}
+
+
 spl_autoload_register('Library');
+spl_autoload_register('Framework');
 spl_autoload_extensions('.php');
 
 function start($param)
