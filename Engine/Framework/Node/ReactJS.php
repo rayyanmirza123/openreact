@@ -48,19 +48,17 @@ class ReactJS {
    * @param string $libsrc React's source code
    * @param string $appsrc Application source code
    */
+ 
   
-  private $lib,$app;
-  private $instance;
-  
-  public function __construct() {
+  public function __construct($lib,$app) {
     $react = array();
     // stubs, react
     $react[] = "var console = {warn: function(){}, error: print};";
     $react[] = "var global = global || this, self = self || this, window = window || this;";
-    $react[] = $this->lib;
+    $react[] = $lib;
     $react[] = "var React = global.React, ReactDOM = global.ReactDOM, ReactDOMServer = global.ReactDOMServer;";
     // app's components
-    $react[] = $thi->app;
+    $react[] = $app;
     $react[] = ';';
 
     $concatenated = implode(";\n", $react);
