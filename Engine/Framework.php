@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 /* 
  *  Damn Straight now copying only buying.
  */
-//require_once('/app/Engine/Framework/Node/ReactJS.php');
+require_once('/app/Engine/Framework/Node/ReactJS.php');
 $registry = new Registry();
 $config  = new Config();
 $react_source = '/Framework/Node/react_bundle/react-bundle.js';
