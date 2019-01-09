@@ -35,8 +35,12 @@ $file = '/app/Engine/Framework/' . str_replace('\\', '/', $class) . '.php';
 }
 
 
-spl_autoload_register('Library');
-spl_autoload_register('Framework');
+//spl_autoload_register('Library');
+//spl_autoload_register('Framework');
+
+set_include_path(implode(PATH_SEPARATOR, array(get_include_path(), './Library', './Framework')));
+spl_autoload_register();
+
 spl_autoload_extensions('.php');
 
 function start($param)
