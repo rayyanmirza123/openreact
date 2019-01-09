@@ -26,6 +26,7 @@ function Framework($class)
 $file = '/app/Engine/Framework/' . str_replace('\\', '/', $class) . '.php';
 	if (is_file($file)) {
 		include_once($file);
+		echo $file;
 		return true;
 	} else {
 		//echo $file;
